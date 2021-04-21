@@ -19,20 +19,81 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fDV-ZJ-oEK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwR-c1-6ab">
+                                <rect key="frame" x="356.5" y="66" width="41.5" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIo-i1-wTu">
+                                <rect key="frame" x="16" y="66" width="82" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add 1 to each of the digits. So, 1357 becomes 2468." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-3s-vme">
+                                <rect key="frame" x="16" y="769" width="382" height="61"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1B-DA-oRO">
+                                <rect key="frame" x="8" y="342.5" width="398" height="211"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-W7-aDz">
+                                        <rect key="frame" x="8" y="8" width="382" height="77"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="70" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-0a-Pn1">
+                                        <rect key="frame" x="8" y="117" width="382" height="86"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Bqv-W7-aDz" firstAttribute="top" secondItem="s1B-DA-oRO" secondAttribute="top" constant="8" id="7Jo-TH-Gm5"/>
+                                    <constraint firstItem="Byl-0a-Pn1" firstAttribute="top" secondItem="Bqv-W7-aDz" secondAttribute="bottom" constant="32" id="7dH-cj-Yra"/>
+                                    <constraint firstAttribute="trailing" secondItem="Byl-0a-Pn1" secondAttribute="trailing" constant="8" id="ROh-vu-Ew3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bqv-W7-aDz" secondAttribute="trailing" constant="8" id="egu-Nc-ajZ"/>
+                                    <constraint firstItem="Byl-0a-Pn1" firstAttribute="leading" secondItem="s1B-DA-oRO" secondAttribute="leading" constant="8" id="k9T-Mu-arT"/>
+                                    <constraint firstItem="Bqv-W7-aDz" firstAttribute="leading" secondItem="s1B-DA-oRO" secondAttribute="leading" constant="8" id="uVl-xg-Vfr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Byl-0a-Pn1" secondAttribute="bottom" constant="8" id="xId-cr-exZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fDV-ZJ-oEK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3AF-q1-nWP"/>
                             <constraint firstItem="fDV-ZJ-oEK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4oZ-8a-Lhr"/>
+                            <constraint firstItem="s1B-DA-oRO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="CVM-sI-UWm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DwR-c1-6ab" secondAttribute="trailing" constant="16" id="JDU-Vz-G4W"/>
+                            <constraint firstAttribute="trailing" secondItem="s1B-DA-oRO" secondAttribute="trailing" constant="8" id="NQn-HX-EES"/>
+                            <constraint firstItem="ZIo-i1-wTu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OXm-G4-eFC"/>
+                            <constraint firstItem="bAA-3s-vme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bg3-7o-cl2"/>
+                            <constraint firstItem="ZIo-i1-wTu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="dcE-QV-msu"/>
+                            <constraint firstItem="DwR-c1-6ab" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="f7q-Gw-fsJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bAA-3s-vme" secondAttribute="trailing" constant="16" id="hef-PG-0bc"/>
                             <constraint firstAttribute="trailing" secondItem="fDV-ZJ-oEK" secondAttribute="trailing" id="jfP-Wc-aBZ"/>
                             <constraint firstAttribute="bottom" secondItem="fDV-ZJ-oEK" secondAttribute="bottom" id="lUx-tA-dGQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bAA-3s-vme" secondAttribute="bottom" constant="32" id="nMv-Wd-obw"/>
+                            <constraint firstItem="s1B-DA-oRO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x4U-Aa-BLB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="Bqv-W7-aDz" id="vEu-HL-g01"/>
+                        <outlet property="numberTextView" destination="Byl-0a-Pn1" id="dpt-fv-N5p"/>
+                        <outlet property="scoreLabel" destination="ZIo-i1-wTu" id="9Pa-aM-GMf"/>
+                        <outlet property="timeLabel" destination="DwR-c1-6ab" id="hrZ-Ol-YKo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="126"/>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
         </scene>
     </scenes>
     <resources>
