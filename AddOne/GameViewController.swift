@@ -9,8 +9,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     var score = 0
-    updateScoreLabel()
-    updateNumberLabel()
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
@@ -19,7 +18,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var numberTextView: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateScoreLabel()
+        updateNumberLabel()
     }
     
     func updateScoreLabel() {
